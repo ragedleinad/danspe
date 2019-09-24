@@ -1,0 +1,113 @@
+/*
+Theme Name: annina
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+.spaceLeft {
+	padding-left: 0px;
+	padding-right: 5px;
+}
+.spaceRight {
+	padding-right: 0px;
+	padding-left: 5px;
+}
+.spaceLeftDouble {
+	padding-left: 0px;
+	padding-right: 10px;
+}
+.spaceRightDouble {
+	padding-right: 0px;
+	padding-left: 10px;
+}
+.main-navigation ul li .indicator {
+	right: inherit;
+	left: 16px;
+}
+.main-navigation ul ul li {
+	padding-left: 0;
+	padding-right: 1em;
+}
+#close-search, .comment-reply-title small {
+	float: left;
+}
+#comments article footer img {
+	float: right;
+	margin-left: 15px;
+	margin-right: 0;
+}
+#comments .reply {
+	right: inherit;
+	left: 0;
+}
+#comments ol ol {
+	padding-right: 5%;
+	padding-left: 0;
+}
+textarea {
+	padding-right: 14px;
+	padding-left: 0;
+}
+span.read-more i.fa-caret-right:before {
+	content: "\f0d9";
+}
+
+.navigation.pagination .fa-angle-double-right:before {
+	content: "\f100";
+}
+
+.navigation.pagination .fa-angle-double-left:before {
+	content: "\f101";
+}
+aside ul.menu .indicatorBar {
+	right: inherit;
+	left: 0;
+	border-left-width: inherit;
+    border-left-style: inherit;
+	border-right-width: 1px;
+    border-right-style: solid;
+}
+aside ul.menu ul.sub-menu {
+    padding-left: inherit;
+	padding-right: 2em;
+}
+.widget_archive li a, .widget_categories li a {
+	float: right;
+}
+.widget_archive li, .widget_categories li {
+	text-align: left;
+}
+.widget.widget_categories li:before {
+	padding-right: inherit;
+	padding-left: 0.5em;
+	float: right;
+}
+.widget.widget_archive li:before {
+	content: "\f0d9";
+	padding-right: inherit;
+	padding-left: 0.5em;
+	float: right;
+}
+.widget.widget_search input[type="search"] {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+	border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+	float: right;
+}
+.widget.widget_search input[type="submit"] {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+	border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+	float: left;
+}
